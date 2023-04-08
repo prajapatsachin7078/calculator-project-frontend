@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="centered">
+        <div class="text">
+            <h3 class="">CALCULATOR</h3>
+        </div>
+        <input type="text" id = "result">
+        <div class ="btn">
+            <div class ="row">
+                <button onclick="allClearInput()"><span>AC</span></button>
+                <button onclick="clearInput('C')"><span>C</span></button>
+                <button onclick="appendNumber('%')"><span>%</span></button>
+                <button onclick="appendNumber('/')" class="coloured-btns"><span>/</span></button>
+            </div>
+            <div class ="row">
+                <button onclick="appendNumber(7)"><span>7</span></button>
+                <button onclick="appendNumber(8)"><span>8</span></button>
+                <button onclick="appendNumber(9)"><span>9</span></button>
+                <button onclick="appendNumber('*')" class="coloured-btns"><span>*</span></button>
+            </div>
+            <div class ="row">
+                <button onclick="appendNumber(4)"><span>4</span></button>
+                <button onclick="appendNumber(5)" style="background-color: greenyellow;"><span>5</span></button>
+                <button onclick="appendNumber(6)"><span>6</span></button>
+                <button onclick="appendNumber('-')" class="coloured-btns"><span>-</span></button>
+            </div>
+            <div class ="row">
+                <button onclick="appendNumber(1)"><span>1</span></button>
+                <button onclick="appendNumber(2)"><span>2</span></button>
+                <button onclick="appendNumber(3)"><span>3</span></button>
+                <button onclick="appendNumber('+')" class="coloured-btns"><span>+</span></button>
+            </div>
+            <div class ="row">
+                <button onclick="appendNumber(0)" style="width:185px;"><span >0</span></button>
+                <button onclick="appendNumber('.')"><span>.</span></button>
+                <!-- <button><span>3</span></button> -->
+                <button onclick="calculate()"style="background-color: #E90064;"><span>=</span></button>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <hr>
+            <h4 style="float: right; display: inline;">Credit: Sachin Prjapati</h4>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>  
